@@ -90,14 +90,21 @@
                   </svg>
                 </div>
                 <div class="form-field">
-                  <input class="form-input" type="email" name="mail" id="mail" />
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="mail"
+                    id="mail"
+                  />
                   <label class="form-label" for="mail">Почта</label>
                   <svg class="form-svg" width="18" height="18">
                     <use href="./images/email.svg#email"></use>
                   </svg>
                 </div>
                 <div class="form-comment">
-                  <label class="form-laber-comment" for="comment">Комментарий</label>
+                  <label class="form-laber-comment" for="comment"
+                    >Комментарий</label
+                  >
                   <textarea
                     class="comment"
                     name="comment"
@@ -107,12 +114,18 @@
                     placeholder="Введите текст"
                   ></textarea>
                 </div>
-                <div class="form-field-checkbox ">
-                  <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
-                  <label class="checkbox-label" for="checkbox">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                  <svg class="checkbox-svg" width="16" height="15">
-                    <use href="./images/checkbox.svg#checkbox"></use>
-                  </svg>
+                <div class="form-field-checkbox">
+                  <label class="checkbox-label"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a class="form-license" href="">Условия договора</a>
+                    <input class="checkbox" type="checkbox" name="checkbox" />
+                    <svg class="checkbox-svg" width="16" height="15">
+                      <use href="./images/checkbox.svg#checkbox"></use>
+                    </svg>
+                    <svg class="checkbox-checked-svg" width="16" height="15">
+                      <use href="./images/iconcheck.svg#checked"></use>
+                    </svg>
+                  </label>
                 </div>
                 <button class="form-btn" type="submit">Отправить</button>
               </form>
@@ -466,6 +479,13 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-input">
+          <label class="label-footer" for="">
+            Подпишитесь на рассылку
+            <input class="footer-input-mail" type="email" placeholder="E-mail" />
+          </label>
+          <button class="footer-btn">Подписаться</button>
         </div>
       </div>
     </footer>
